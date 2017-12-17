@@ -10,7 +10,7 @@ import Foundation
 /// This class helps manage the "registry" keys associated to the application
 class AMGRegistry{
     var filePath : String = "";
-    var app : String = "RemindersPP";
+    var app : String = "Sample";
     var root : String = "";
     
     private func prepare(){
