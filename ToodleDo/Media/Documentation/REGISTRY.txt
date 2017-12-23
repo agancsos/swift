@@ -1,0 +1,15 @@
+================================================================================
+								REGISTRY
+================================================================================
+The following keys can be used for the PLIST "REGISTRY" file under
+~/Library/Application Support/ToodleDo/
+--------------------------------------------------------------------------------
+* Silent   : No messages will be displayed
+* Verbose  : All information will be logged
+* Wallpaper: Path to the image file to use as the background
+* Legacy.AllowAllExtensions: Allow the user to select from all file extensions
+* GUI.Buttons.Borders: Remove borders on GUI buttons
+* GUI.Ratio: Option to change GUI ration from 16:9 to 4:3
+* Override.Data.DBFilePath: Overrides the application database file
+* GUI.ListView.Lock: Restrict updates in the list view
+================================================================================

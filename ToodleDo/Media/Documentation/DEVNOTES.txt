@@ -1,0 +1,14 @@
+================================================================================
+								DEVNOTES
+================================================================================
+								ICON FILES
+--------------------------------------------------------------------------------
+All icon files are located under $BUNDLE_PATH/Contents/Resources/ and must have
+dimensions of 15px X 15px
+
+* list_item.png     : Icon for list objects
+* reminder_item.png : Icon for reminder objects
+* root.png          : Icon for the root container
+--------------------------------------------------------------------------------
+
+================================================================================
