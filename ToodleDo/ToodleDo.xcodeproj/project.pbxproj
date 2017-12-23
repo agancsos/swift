@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028FC23B1FEE19890009666A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028FC1F71FEE19890009666A /* Assets.xcassets */; };
+		028FC23C1FEE19890009666A /* AMGCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC1FA1FEE19890009666A /* AMGCommon.swift */; };
+		028FC23D1FEE19890009666A /* AMGDBMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC1FC1FEE19890009666A /* AMGDBMS.swift */; };
+		028FC23E1FEE19890009666A /* AMGEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC1FE1FEE19890009666A /* AMGEncode.swift */; };
+		028FC23F1FEE19890009666A /* AMGEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2001FEE19890009666A /* AMGEnums.swift */; };
+		028FC2401FEE19890009666A /* AMGMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2021FEE19890009666A /* AMGMessage.swift */; };
+		028FC2411FEE19890009666A /* AMGPreferenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2041FEE19890009666A /* AMGPreferenceItem.swift */; };
+		028FC2421FEE19890009666A /* AMGRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2061FEE19890009666A /* AMGRegistry.swift */; };
+		028FC2431FEE19890009666A /* AMGList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2081FEE19890009666A /* AMGList.swift */; };
+		028FC2441FEE19890009666A /* AMGReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2091FEE19890009666A /* AMGReminder.swift */; };
+		028FC2451FEE19890009666A /* AMGReminderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC20B1FEE19890009666A /* AMGReminderData.swift */; };
+		028FC2461FEE19890009666A /* AMGReminderImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC20D1FEE19890009666A /* AMGReminderImport.swift */; };
+		028FC2471FEE19890009666A /* AMGSQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC20F1FEE19890009666A /* AMGSQLite.swift */; };
+		028FC2481FEE19890009666A /* AMGTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2111FEE19890009666A /* AMGTracer.swift */; };
+		028FC2491FEE19890009666A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2141FEE19890009666A /* AppDelegate.swift */; };
+		028FC24A1FEE19890009666A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2151FEE19890009666A /* Main.storyboard */; };
+		028FC24B1FEE19890009666A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2171FEE19890009666A /* ViewController.swift */; };
+		028FC24C1FEE19890009666A /* AMGBasicGUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC21A1FEE19890009666A /* AMGBasicGUI.swift */; };
+		028FC24D1FEE19890009666A /* AMGFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC21C1FEE19890009666A /* AMGFeedbackView.swift */; };
+		028FC24E1FEE19890009666A /* AMGLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC21E1FEE19890009666A /* AMGLabel.swift */; };
+		028FC24F1FEE19890009666A /* AMGDBMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2201FEE19890009666A /* AMGDBMenu.swift */; };
+		028FC2501FEE19890009666A /* AMGMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2211FEE19890009666A /* AMGMainMenu.swift */; };
+		028FC2511FEE19890009666A /* AMGListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2241FEE19890009666A /* AMGListView.swift */; };
+		028FC2521FEE19890009666A /* AMGPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2251FEE19890009666A /* AMGPropertyView.swift */; };
+		028FC2531FEE19890009666A /* AMGRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2261FEE19890009666A /* AMGRemindersView.swift */; };
+		028FC2541FEE19890009666A /* AMGSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC2281FEE19890009666A /* AMGSearch.swift */; };
+		028FC2551FEE19890009666A /* AMGTableWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC22A1FEE19890009666A /* AMGTableWindow.swift */; };
+		028FC2561FEE19890009666A /* AMGTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC22C1FEE19890009666A /* AMGTextView.swift */; };
+		028FC2571FEE19890009666A /* AMGPreferenceWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FC22E1FEE19890009666A /* AMGPreferenceWindow.swift */; };
+		028FC2581FEE19890009666A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 028FC22F1FEE19890009666A /* Info.plist */; };
+		028FC2591FEE19890009666A /* DEVNOTES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2321FEE19890009666A /* DEVNOTES.txt */; };
+		028FC25A1FEE19890009666A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2331FEE19890009666A /* README.txt */; };
+		028FC25B1FEE19890009666A /* REGISTRY.txt in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2341FEE19890009666A /* REGISTRY.txt */; };
+		028FC25C1FEE19890009666A /* list_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2371FEE19890009666A /* list_item.png */; };
+		028FC25D1FEE19890009666A /* reminder_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2381FEE19890009666A /* reminder_item.png */; };
+		028FC25E1FEE19890009666A /* root.png in Resources */ = {isa = PBXBuildFile; fileRef = 028FC2391FEE19890009666A /* root.png */; };
+		028FC25F1FEE19D30009666A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 027639481FD34BA600EEAF35 /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		027639051FD34A8700EEAF35 /* ToodleDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToodleDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		027639341FD34B7E00EEAF35 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		027639481FD34BA600EEAF35 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		028FC1F71FEE19890009666A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		028FC1FA1FEE19890009666A /* AMGCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGCommon.swift; sourceTree = "<group>"; };
+		028FC1FC1FEE19890009666A /* AMGDBMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGDBMS.swift; sourceTree = "<group>"; };
+		028FC1FE1FEE19890009666A /* AMGEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGEncode.swift; sourceTree = "<group>"; };
+		028FC2001FEE19890009666A /* AMGEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGEnums.swift; sourceTree = "<group>"; };
+		028FC2021FEE19890009666A /* AMGMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGMessage.swift; sourceTree = "<group>"; };
+		028FC2041FEE19890009666A /* AMGPreferenceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGPreferenceItem.swift; sourceTree = "<group>"; };
+		028FC2061FEE19890009666A /* AMGRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGRegistry.swift; sourceTree = "<group>"; };
+		028FC2081FEE19890009666A /* AMGList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGList.swift; sourceTree = "<group>"; };
+		028FC2091FEE19890009666A /* AMGReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGReminder.swift; sourceTree = "<group>"; };
+		028FC20B1FEE19890009666A /* AMGReminderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGReminderData.swift; sourceTree = "<group>"; };
+		028FC20D1FEE19890009666A /* AMGReminderImport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGReminderImport.swift; sourceTree = "<group>"; };
+		028FC20F1FEE19890009666A /* AMGSQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGSQLite.swift; sourceTree = "<group>"; };
+		028FC2111FEE19890009666A /* AMGTracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGTracer.swift; sourceTree = "<group>"; };
+		028FC2141FEE19890009666A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		028FC2161FEE19890009666A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		028FC2171FEE19890009666A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		028FC21A1FEE19890009666A /* AMGBasicGUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGBasicGUI.swift; sourceTree = "<group>"; };
+		028FC21C1FEE19890009666A /* AMGFeedbackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGFeedbackView.swift; sourceTree = "<group>"; };
+		028FC21E1FEE19890009666A /* AMGLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGLabel.swift; sourceTree = "<group>"; };
+		028FC2201FEE19890009666A /* AMGDBMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGDBMenu.swift; sourceTree = "<group>"; };
+		028FC2211FEE19890009666A /* AMGMainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGMainMenu.swift; sourceTree = "<group>"; };
+		028FC2241FEE19890009666A /* AMGListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGListView.swift; sourceTree = "<group>"; };
+		028FC2251FEE19890009666A /* AMGPropertyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGPropertyView.swift; sourceTree = "<group>"; };
+		028FC2261FEE19890009666A /* AMGRemindersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGRemindersView.swift; sourceTree = "<group>"; };
+		028FC2281FEE19890009666A /* AMGSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGSearch.swift; sourceTree = "<group>"; };
+		028FC22A1FEE19890009666A /* AMGTableWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGTableWindow.swift; sourceTree = "<group>"; };
+		028FC22C1FEE19890009666A /* AMGTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGTextView.swift; sourceTree = "<group>"; };
+		028FC22E1FEE19890009666A /* AMGPreferenceWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGPreferenceWindow.swift; sourceTree = "<group>"; };
+		028FC22F1FEE19890009666A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028FC2321FEE19890009666A /* DEVNOTES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DEVNOTES.txt; sourceTree = "<group>"; };
+		028FC2331FEE19890009666A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		028FC2341FEE19890009666A /* REGISTRY.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = REGISTRY.txt; sourceTree = "<group>"; };
+		028FC2371FEE19890009666A /* list_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_item.png; sourceTree = "<group>"; };
+		028FC2381FEE19890009666A /* reminder_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_item.png; sourceTree = "<group>"; };
+		028FC2391FEE19890009666A /* root.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = root.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		027639021FD34A8700EEAF35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028FC25F1FEE19D30009666A /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027638FC1FD34A8700EEAF35 = {
+			isa = PBXGroup;
+			children = (
+				028FC1F61FEE19890009666A /* ToodleDo */,
+				027639341FD34B7E00EEAF35 /* Bridge.h */,
+				027639061FD34A8700EEAF35 /* Products */,
+				027639471FD34BA500EEAF35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		027639061FD34A8700EEAF35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				027639051FD34A8700EEAF35 /* ToodleDo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		027639471FD34BA500EEAF35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				027639481FD34BA600EEAF35 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		028FC1F61FEE19890009666A /* ToodleDo */ = {
+			isa = PBXGroup;
+			children = (
+				028FC1F71FEE19890009666A /* Assets.xcassets */,
+				028FC1F81FEE19890009666A /* Classes */,
+				028FC2121FEE19890009666A /* GUI */,
+				028FC22F1FEE19890009666A /* Info.plist */,
+				028FC2301FEE19890009666A /* Media */,
+			);
+			path = ToodleDo;
+			sourceTree = "<group>";
+		};
+		028FC1F81FEE19890009666A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				028FC1F91FEE19890009666A /* AMGCommon */,
+				028FC1FB1FEE19890009666A /* AMGDBMS */,
+				028FC1FD1FEE19890009666A /* AMGEncode */,
+				028FC1FF1FEE19890009666A /* AMGEnums */,
+				028FC2011FEE19890009666A /* AMGMessage */,
+				028FC2031FEE19890009666A /* AMGPreferenceItem */,
+				028FC2051FEE19890009666A /* AMGRegistry */,
+				028FC2071FEE19890009666A /* AMGReminder */,
+				028FC20A1FEE19890009666A /* AMGReminderData */,
+				028FC20C1FEE19890009666A /* AMGReminderImport */,
+				028FC20E1FEE19890009666A /* AMGSQLite */,
+				028FC2101FEE19890009666A /* AMGTracer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		028FC1F91FEE19890009666A /* AMGCommon */ = {
+			isa = PBXGroup;
+			children = (
+				028FC1FA1FEE19890009666A /* AMGCommon.swift */,
+			);
+			path = AMGCommon;
+			sourceTree = "<group>";
+		};
+		028FC1FB1FEE19890009666A /* AMGDBMS */ = {
+			isa = PBXGroup;
+			children = (
+				028FC1FC1FEE19890009666A /* AMGDBMS.swift */,
+			);
+			path = AMGDBMS;
+			sourceTree = "<group>";
+		};
+		028FC1FD1FEE19890009666A /* AMGEncode */ = {
+			isa = PBXGroup;
+			children = (
+				028FC1FE1FEE19890009666A /* AMGEncode.swift */,
+			);
+			path = AMGEncode;
+			sourceTree = "<group>";
+		};
+		028FC1FF1FEE19890009666A /* AMGEnums */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2001FEE19890009666A /* AMGEnums.swift */,
+			);
+			path = AMGEnums;
+			sourceTree = "<group>";
+		};
+		028FC2011FEE19890009666A /* AMGMessage */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2021FEE19890009666A /* AMGMessage.swift */,
+			);
+			path = AMGMessage;
+			sourceTree = "<group>";
+		};
+		028FC2031FEE19890009666A /* AMGPreferenceItem */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2041FEE19890009666A /* AMGPreferenceItem.swift */,
+			);
+			path = AMGPreferenceItem;
+			sourceTree = "<group>";
+		};
+		028FC2051FEE19890009666A /* AMGRegistry */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2061FEE19890009666A /* AMGRegistry.swift */,
+			);
+			path = AMGRegistry;
+			sourceTree = "<group>";
+		};
+		028FC2071FEE19890009666A /* AMGReminder */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2081FEE19890009666A /* AMGList.swift */,
+				028FC2091FEE19890009666A /* AMGReminder.swift */,
+			);
+			path = AMGReminder;
+			sourceTree = "<group>";
+		};
+		028FC20A1FEE19890009666A /* AMGReminderData */ = {
+			isa = PBXGroup;
+			children = (
+				028FC20B1FEE19890009666A /* AMGReminderData.swift */,
+			);
+			path = AMGReminderData;
+			sourceTree = "<group>";
+		};
+		028FC20C1FEE19890009666A /* AMGReminderImport */ = {
+			isa = PBXGroup;
+			children = (
+				028FC20D1FEE19890009666A /* AMGReminderImport.swift */,
+			);
+			path = AMGReminderImport;
+			sourceTree = "<group>";
+		};
+		028FC20E1FEE19890009666A /* AMGSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				028FC20F1FEE19890009666A /* AMGSQLite.swift */,
+			);
+			path = AMGSQLite;
+			sourceTree = "<group>";
+		};
+		028FC2101FEE19890009666A /* AMGTracer */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2111FEE19890009666A /* AMGTracer.swift */,
+			);
+			path = AMGTracer;
+			sourceTree = "<group>";
+		};
+		028FC2121FEE19890009666A /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2131FEE19890009666A /* Globals */,
+				028FC2181FEE19890009666A /* Objects */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		028FC2131FEE19890009666A /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2141FEE19890009666A /* AppDelegate.swift */,
+				028FC2151FEE19890009666A /* Main.storyboard */,
+				028FC2171FEE19890009666A /* ViewController.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		028FC2181FEE19890009666A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2191FEE19890009666A /* AMGBasicGUI */,
+				028FC21B1FEE19890009666A /* AMGFeedbackView */,
+				028FC21D1FEE19890009666A /* AMGLabel */,
+				028FC21F1FEE19890009666A /* AMGMainMenu */,
+				028FC2221FEE19890009666A /* AMGPreferenceWindow */,
+				028FC2231FEE19890009666A /* AMGRemindersView */,
+				028FC2271FEE19890009666A /* AMGSearch */,
+				028FC2291FEE19890009666A /* AMGTableWindow */,
+				028FC22B1FEE19890009666A /* AMGTextView */,
+				028FC22D1FEE19890009666A /* New Group */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		028FC2191FEE19890009666A /* AMGBasicGUI */ = {
+			isa = PBXGroup;
+			children = (
+				028FC21A1FEE19890009666A /* AMGBasicGUI.swift */,
+			);
+			path = AMGBasicGUI;
+			sourceTree = "<group>";
+		};
+		028FC21B1FEE19890009666A /* AMGFeedbackView */ = {
+			isa = PBXGroup;
+			children = (
+				028FC21C1FEE19890009666A /* AMGFeedbackView.swift */,
+			);
+			path = AMGFeedbackView;
+			sourceTree = "<group>";
+		};
+		028FC21D1FEE19890009666A /* AMGLabel */ = {
+			isa = PBXGroup;
+			children = (
+				028FC21E1FEE19890009666A /* AMGLabel.swift */,
+			);
+			path = AMGLabel;
+			sourceTree = "<group>";
+		};
+		028FC21F1FEE19890009666A /* AMGMainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2201FEE19890009666A /* AMGDBMenu.swift */,
+				028FC2211FEE19890009666A /* AMGMainMenu.swift */,
+			);
+			path = AMGMainMenu;
+			sourceTree = "<group>";
+		};
+		028FC2221FEE19890009666A /* AMGPreferenceWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AMGPreferenceWindow;
+			sourceTree = "<group>";
+		};
+		028FC2231FEE19890009666A /* AMGRemindersView */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2241FEE19890009666A /* AMGListView.swift */,
+				028FC2251FEE19890009666A /* AMGPropertyView.swift */,
+				028FC2261FEE19890009666A /* AMGRemindersView.swift */,
+			);
+			path = AMGRemindersView;
+			sourceTree = "<group>";
+		};
+		028FC2271FEE19890009666A /* AMGSearch */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2281FEE19890009666A /* AMGSearch.swift */,
+			);
+			path = AMGSearch;
+			sourceTree = "<group>";
+		};
+		028FC2291FEE19890009666A /* AMGTableWindow */ = {
+			isa = PBXGroup;
+			children = (
+				028FC22A1FEE19890009666A /* AMGTableWindow.swift */,
+			);
+			path = AMGTableWindow;
+			sourceTree = "<group>";
+		};
+		028FC22B1FEE19890009666A /* AMGTextView */ = {
+			isa = PBXGroup;
+			children = (
+				028FC22C1FEE19890009666A /* AMGTextView.swift */,
+			);
+			path = AMGTextView;
+			sourceTree = "<group>";
+		};
+		028FC22D1FEE19890009666A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				028FC22E1FEE19890009666A /* AMGPreferenceWindow.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		028FC2301FEE19890009666A /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2311FEE19890009666A /* Documentation */,
+				028FC2351FEE19890009666A /* Images */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		028FC2311FEE19890009666A /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2321FEE19890009666A /* DEVNOTES.txt */,
+				028FC2331FEE19890009666A /* README.txt */,
+				028FC2341FEE19890009666A /* REGISTRY.txt */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		028FC2351FEE19890009666A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2361FEE19890009666A /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		028FC2361FEE19890009666A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				028FC2371FEE19890009666A /* list_item.png */,
+				028FC2381FEE19890009666A /* reminder_item.png */,
+				028FC2391FEE19890009666A /* root.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		027639041FD34A8700EEAF35 /* ToodleDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027639151FD34A8700EEAF35 /* Build configuration list for PBXNativeTarget "ToodleDo" */;
+			buildPhases = (
+				027639011FD34A8700EEAF35 /* Sources */,
+				027639021FD34A8700EEAF35 /* Frameworks */,
+				027639031FD34A8700EEAF35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToodleDo;
+			productName = "Reminders++";
+			productReference = 027639051FD34A8700EEAF35 /* ToodleDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		027638FD1FD34A8700EEAF35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Abel Gancsos";
+				TargetAttributes = {
+					027639041FD34A8700EEAF35 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 027639001FD34A8700EEAF35 /* Build configuration list for PBXProject "ToodleDo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 027638FC1FD34A8700EEAF35;
+			productRefGroup = 027639061FD34A8700EEAF35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				027639041FD34A8700EEAF35 /* ToodleDo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		027639031FD34A8700EEAF35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028FC25D1FEE19890009666A /* reminder_item.png in Resources */,
+				028FC23B1FEE19890009666A /* Assets.xcassets in Resources */,
+				028FC25E1FEE19890009666A /* root.png in Resources */,
+				028FC25B1FEE19890009666A /* REGISTRY.txt in Resources */,
+				028FC24A1FEE19890009666A /* Main.storyboard in Resources */,
+				028FC2591FEE19890009666A /* DEVNOTES.txt in Resources */,
+				028FC2581FEE19890009666A /* Info.plist in Resources */,
+				028FC25A1FEE19890009666A /* README.txt in Resources */,
+				028FC25C1FEE19890009666A /* list_item.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		027639011FD34A8700EEAF35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028FC24B1FEE19890009666A /* ViewController.swift in Sources */,
+				028FC2401FEE19890009666A /* AMGMessage.swift in Sources */,
+				028FC2461FEE19890009666A /* AMGReminderImport.swift in Sources */,
+				028FC2521FEE19890009666A /* AMGPropertyView.swift in Sources */,
+				028FC2431FEE19890009666A /* AMGList.swift in Sources */,
+				028FC2541FEE19890009666A /* AMGSearch.swift in Sources */,
+				028FC2421FEE19890009666A /* AMGRegistry.swift in Sources */,
+				028FC2491FEE19890009666A /* AppDelegate.swift in Sources */,
+				028FC23C1FEE19890009666A /* AMGCommon.swift in Sources */,
+				028FC2471FEE19890009666A /* AMGSQLite.swift in Sources */,
+				028FC2551FEE19890009666A /* AMGTableWindow.swift in Sources */,
+				028FC2571FEE19890009666A /* AMGPreferenceWindow.swift in Sources */,
+				028FC24D1FEE19890009666A /* AMGFeedbackView.swift in Sources */,
+				028FC24C1FEE19890009666A /* AMGBasicGUI.swift in Sources */,
+				028FC23E1FEE19890009666A /* AMGEncode.swift in Sources */,
+				028FC2501FEE19890009666A /* AMGMainMenu.swift in Sources */,
+				028FC23F1FEE19890009666A /* AMGEnums.swift in Sources */,
+				028FC23D1FEE19890009666A /* AMGDBMS.swift in Sources */,
+				028FC2441FEE19890009666A /* AMGReminder.swift in Sources */,
+				028FC2481FEE19890009666A /* AMGTracer.swift in Sources */,
+				028FC2531FEE19890009666A /* AMGRemindersView.swift in Sources */,
+				028FC2411FEE19890009666A /* AMGPreferenceItem.swift in Sources */,
+				028FC24F1FEE19890009666A /* AMGDBMenu.swift in Sources */,
+				028FC24E1FEE19890009666A /* AMGLabel.swift in Sources */,
+				028FC2561FEE19890009666A /* AMGTextView.swift in Sources */,
+				028FC2511FEE19890009666A /* AMGListView.swift in Sources */,
+				028FC2451FEE19890009666A /* AMGReminderData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		028FC2151FEE19890009666A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				028FC2161FEE19890009666A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		027639131FD34A8700EEAF35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		027639141FD34A8700EEAF35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		027639161FD34A8700EEAF35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ToodleDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abelgancsos.ToodleDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		027639171FD34A8700EEAF35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ToodleDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abelgancsos.ToodleDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		027639001FD34A8700EEAF35 /* Build configuration list for PBXProject "ToodleDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027639131FD34A8700EEAF35 /* Debug */,
+				027639141FD34A8700EEAF35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		027639151FD34A8700EEAF35 /* Build configuration list for PBXNativeTarget "ToodleDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027639161FD34A8700EEAF35 /* Debug */,
+				027639171FD34A8700EEAF35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 027638FD1FD34A8700EEAF35 /* Project object */;
+}
