@@ -1,0 +1,30 @@
+################################################################################
+                                  REGISTRY
+################################################################################
+
+The following keys can be used for the PLIST "REGISTRY" file under
+~/Library/Application Support/Grader/
+================================================================================
+* Silent   : No messages will be displayed
+* Verbose  : All information will be logged
+* Wallpaper: Path to the image file to use as the background
+* Legacy.AllowAllExtensions: Allow the user to select from all file extensions
+* GUI.Buttons.Borders: Remove borders on GUI buttons
+* GUI.Ratio: Option to change GUI ration from 16:9 to 4:3
+* GUI.GraderView.Background.Solid: Make background non-transparent
+* GUI.TableView.Backcolor: Background color for the table view
+* GUI.Labels.Height: Height for labels
+* GUI.TreeView.AutoRefresh: Auto refresh the Insitution View when updating
+* GUI.Theme: Name of the theme to use for the GUI
+** NOTE: Folder must exist under Application Support
+* Grader.User.Mode.Instructor: Enables instructor operations
+* Override.Data.DBFilePath: Overrides the application database file
+* GUI.Menu.Hotkey.*: Changes the hotkey used for the menu item
+** NOTES:
+*** Must know the name of the menu item
+*** Modifier keys set to [OPTION] + [CONTROL] to prevent overrides
+*** Registry value must identify the level of the menu item through dot notation
+================================================================================
+
+
+
