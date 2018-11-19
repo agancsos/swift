@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C5F318218DF13E00D0D974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F317218DF13E00D0D974 /* AppDelegate.swift */; };
+		02C5F31A218DF13E00D0D974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F319218DF13E00D0D974 /* ViewController.swift */; };
+		02C5F31C218DF14000D0D974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F31B218DF14000D0D974 /* Assets.xcassets */; };
+		02C5F31F218DF14000D0D974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F31D218DF14000D0D974 /* Main.storyboard */; };
+		02C5F328218DF17000D0D974 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F327218DF17000D0D974 /* README.md */; };
+		02C5F334218E78C800D0D974 /* SR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F333218E78C800D0D974 /* SR.swift */; };
+		02C5F338218E79A300D0D974 /* AMGSafePurge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F337218E79A300D0D974 /* AMGSafePurge.swift */; };
+		02C5F33A218E7CDD00D0D974 /* AMGPurgeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F339218E7CDD00D0D974 /* AMGPurgeItem.swift */; };
+		02C5F33D218E846100D0D974 /* AMGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F33C218E846100D0D974 /* AMGBaseViewController.swift */; };
+		02C5F340218E861900D0D974 /* safepurge.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F33F218E861900D0D974 /* safepurge.png */; };
+		02C5F342218E87C300D0D974 /* safepurge.icns in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F341218E87C300D0D974 /* safepurge.icns */; };
+		02C5F34D218E92A700D0D974 /* folder_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F347218E92A700D0D974 /* folder_black.png */; };
+		02C5F34E218E92A700D0D974 /* file_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F348218E92A700D0D974 /* file_white.png */; };
+		02C5F34F218E92A700D0D974 /* folder_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F349218E92A700D0D974 /* folder_white.png */; };
+		02C5F350218E92A700D0D974 /* file_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F34A218E92A700D0D974 /* file_black.png */; };
+		02C5F351218E92A700D0D974 /* file_std.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F34B218E92A700D0D974 /* file_std.png */; };
+		02C5F352218E92A700D0D974 /* folder_std.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5F34C218E92A700D0D974 /* folder_std.png */; };
+		02C5F356218FE78600D0D974 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C5F355218FE78600D0D974 /* libsqlite3.0.tbd */; };
+		02C5F35E218FF31F00D0D974 /* AMGVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F357218FF31F00D0D974 /* AMGVersion.swift */; };
+		02C5F35F218FF31F00D0D974 /* AMGFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F358218FF31F00D0D974 /* AMGFeature.swift */; };
+		02C5F360218FF31F00D0D974 /* AMGSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F359218FF31F00D0D974 /* AMGSystem.swift */; };
+		02C5F361218FF31F00D0D974 /* AMGRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F35A218FF31F00D0D974 /* AMGRegistry.swift */; };
+		02C5F362218FF31F00D0D974 /* AMGTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F35B218FF31F00D0D974 /* AMGTracer.swift */; };
+		02C5F363218FF31F00D0D974 /* AMGConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F35C218FF31F00D0D974 /* AMGConfiguration.swift */; };
+		02C5F364218FF31F00D0D974 /* AMGString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F35D218FF31F00D0D974 /* AMGString.swift */; };
+		02C5F370218FF33200D0D974 /* AMGDataSQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F366218FF33200D0D974 /* AMGDataSQLite.swift */; };
+		02C5F371218FF33200D0D974 /* AMGDataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F367218FF33200D0D974 /* AMGDataTable.swift */; };
+		02C5F372218FF33200D0D974 /* AMGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F368218FF33200D0D974 /* AMGData.swift */; };
+		02C5F373218FF33200D0D974 /* AMGDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F369218FF33200D0D974 /* AMGDataRow.swift */; };
+		02C5F374218FF33200D0D974 /* AMGDataColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F36A218FF33200D0D974 /* AMGDataColumn.swift */; };
+		02C5F375218FF33200D0D974 /* AMGEncodeBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F36C218FF33200D0D974 /* AMGEncodeBinary.swift */; };
+		02C5F376218FF33200D0D974 /* AMGEncodeFullBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F36D218FF33200D0D974 /* AMGEncodeFullBinary.swift */; };
+		02C5F377218FF33200D0D974 /* AMGEncodeHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F36E218FF33200D0D974 /* AMGEncodeHash.swift */; };
+		02C5F378218FF33200D0D974 /* AMGEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F36F218FF33200D0D974 /* AMGEncode.swift */; };
+		02C5F37A218FF38600D0D974 /* AMGFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F379218FF38600D0D974 /* AMGFiles.swift */; };
+		02C5F37C2190011000D0D974 /* AMGSafePurgeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F37B2190011000D0D974 /* AMGSafePurgeHelpers.swift */; };
+		02C5F37F2193EF6C00D0D974 /* AMGLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F37E2193EF6C00D0D974 /* AMGLabel.swift */; };
+		02C5F3822193F8C600D0D974 /* AMGSafePurgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F3812193F8C600D0D974 /* AMGSafePurgeViewModel.swift */; };
+		02C5F3842193F9EC00D0D974 /* AMGFeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F3832193F9EC00D0D974 /* AMGFeedbackViewModel.swift */; };
+		02C5F3862198D14500D0D974 /* AMGToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F3852198D14500D0D974 /* AMGToolbarController.swift */; };
+		02C5F3892198D61000D0D974 /* AMGPreferenceWindowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F3882198D61000D0D974 /* AMGPreferenceWindowModel.swift */; };
+		02C5F38B2198D63B00D0D974 /* AMGPreferenceWindowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F38A2198D63B00D0D974 /* AMGPreferenceWindowViewModel.swift */; };
+		02C5F38D21990BCC00D0D974 /* AMGCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F38C21990BCC00D0D974 /* AMGCommon.swift */; };
+		02C5F38F21991B0E00D0D974 /* AMGSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F38E21991B0E00D0D974 /* AMGSettingItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02C5F314218DF13E00D0D974 /* SafePurge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafePurge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C5F317218DF13E00D0D974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02C5F319218DF13E00D0D974 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02C5F31B218DF14000D0D974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02C5F31E218DF14000D0D974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02C5F320218DF14000D0D974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C5F321218DF14000D0D974 /* SafePurge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafePurge.entitlements; sourceTree = "<group>"; };
+		02C5F327218DF17000D0D974 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		02C5F32D218DF20500D0D974 /* DEVNOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVNOTES.md; sourceTree = "<group>"; };
+		02C5F331218DF82100D0D974 /* SafePurge.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = SafePurge.docx; sourceTree = "<group>"; };
+		02C5F333218E78C800D0D974 /* SR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SR.swift; sourceTree = "<group>"; };
+		02C5F337218E79A300D0D974 /* AMGSafePurge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSafePurge.swift; sourceTree = "<group>"; };
+		02C5F339218E7CDD00D0D974 /* AMGPurgeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPurgeItem.swift; sourceTree = "<group>"; };
+		02C5F33C218E846100D0D974 /* AMGBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGBaseViewController.swift; sourceTree = "<group>"; };
+		02C5F33F218E861900D0D974 /* safepurge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safepurge.png; sourceTree = "<group>"; };
+		02C5F341218E87C300D0D974 /* safepurge.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = safepurge.icns; sourceTree = "<group>"; };
+		02C5F347218E92A700D0D974 /* folder_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder_black.png; sourceTree = "<group>"; };
+		02C5F348218E92A700D0D974 /* file_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_white.png; sourceTree = "<group>"; };
+		02C5F349218E92A700D0D974 /* folder_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder_white.png; sourceTree = "<group>"; };
+		02C5F34A218E92A700D0D974 /* file_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_black.png; sourceTree = "<group>"; };
+		02C5F34B218E92A700D0D974 /* file_std.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_std.png; sourceTree = "<group>"; };
+		02C5F34C218E92A700D0D974 /* folder_std.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder_std.png; sourceTree = "<group>"; };
+		02C5F353218FE6C800D0D974 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		02C5F355218FE78600D0D974 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		02C5F357218FF31F00D0D974 /* AMGVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGVersion.swift; sourceTree = "<group>"; };
+		02C5F358218FF31F00D0D974 /* AMGFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGFeature.swift; sourceTree = "<group>"; };
+		02C5F359218FF31F00D0D974 /* AMGSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGSystem.swift; sourceTree = "<group>"; };
+		02C5F35A218FF31F00D0D974 /* AMGRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGRegistry.swift; sourceTree = "<group>"; };
+		02C5F35B218FF31F00D0D974 /* AMGTracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGTracer.swift; sourceTree = "<group>"; };
+		02C5F35C218FF31F00D0D974 /* AMGConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGConfiguration.swift; sourceTree = "<group>"; };
+		02C5F35D218FF31F00D0D974 /* AMGString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGString.swift; sourceTree = "<group>"; };
+		02C5F366218FF33200D0D974 /* AMGDataSQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGDataSQLite.swift; sourceTree = "<group>"; };
+		02C5F367218FF33200D0D974 /* AMGDataTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGDataTable.swift; sourceTree = "<group>"; };
+		02C5F368218FF33200D0D974 /* AMGData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGData.swift; sourceTree = "<group>"; };
+		02C5F369218FF33200D0D974 /* AMGDataRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGDataRow.swift; sourceTree = "<group>"; };
+		02C5F36A218FF33200D0D974 /* AMGDataColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGDataColumn.swift; sourceTree = "<group>"; };
+		02C5F36C218FF33200D0D974 /* AMGEncodeBinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGEncodeBinary.swift; sourceTree = "<group>"; };
+		02C5F36D218FF33200D0D974 /* AMGEncodeFullBinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGEncodeFullBinary.swift; sourceTree = "<group>"; };
+		02C5F36E218FF33200D0D974 /* AMGEncodeHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGEncodeHash.swift; sourceTree = "<group>"; };
+		02C5F36F218FF33200D0D974 /* AMGEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGEncode.swift; sourceTree = "<group>"; };
+		02C5F379218FF38600D0D974 /* AMGFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGFiles.swift; sourceTree = "<group>"; };
+		02C5F37B2190011000D0D974 /* AMGSafePurgeHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSafePurgeHelpers.swift; sourceTree = "<group>"; };
+		02C5F37E2193EF6C00D0D974 /* AMGLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGLabel.swift; sourceTree = "<group>"; };
+		02C5F3812193F8C600D0D974 /* AMGSafePurgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSafePurgeViewModel.swift; sourceTree = "<group>"; };
+		02C5F3832193F9EC00D0D974 /* AMGFeedbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGFeedbackViewModel.swift; sourceTree = "<group>"; };
+		02C5F3852198D14500D0D974 /* AMGToolbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGToolbarController.swift; sourceTree = "<group>"; };
+		02C5F3882198D61000D0D974 /* AMGPreferenceWindowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPreferenceWindowModel.swift; sourceTree = "<group>"; };
+		02C5F38A2198D63B00D0D974 /* AMGPreferenceWindowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPreferenceWindowViewModel.swift; sourceTree = "<group>"; };
+		02C5F38C21990BCC00D0D974 /* AMGCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGCommon.swift; sourceTree = "<group>"; };
+		02C5F38E21991B0E00D0D974 /* AMGSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSettingItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C5F311218DF13E00D0D974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C5F356218FE78600D0D974 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C5F30B218DF13E00D0D974 = {
+			isa = PBXGroup;
+			children = (
+				02C5F316218DF13E00D0D974 /* SafePurge */,
+				02C5F315218DF13E00D0D974 /* Products */,
+				02C5F354218FE78600D0D974 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02C5F315218DF13E00D0D974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F314218DF13E00D0D974 /* SafePurge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02C5F316218DF13E00D0D974 /* SafePurge */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F333218E78C800D0D974 /* SR.swift */,
+				02C5F327218DF17000D0D974 /* README.md */,
+				02C5F32C218DF1E800D0D974 /* Media */,
+				02C5F32B218DF1DE00D0D974 /* Classes */,
+				02C5F32A218DF1D400D0D974 /* Documentation */,
+				02C5F329218DF18500D0D974 /* GUI */,
+				02C5F31B218DF14000D0D974 /* Assets.xcassets */,
+				02C5F320218DF14000D0D974 /* Info.plist */,
+				02C5F321218DF14000D0D974 /* SafePurge.entitlements */,
+			);
+			path = SafePurge;
+			sourceTree = "<group>";
+		};
+		02C5F329218DF18500D0D974 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F330218DF25900D0D974 /* AMGUI */,
+				02C5F32F218DF23700D0D974 /* Main */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		02C5F32A218DF1D400D0D974 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F331218DF82100D0D974 /* SafePurge.docx */,
+				02C5F32D218DF20500D0D974 /* DEVNOTES.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		02C5F32B218DF1DE00D0D974 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F365218FF33200D0D974 /* AMGData */,
+				02C5F36B218FF33200D0D974 /* AMGEncode */,
+				02C5F336218E798C00D0D974 /* AMGSafePurge */,
+				02C5F335218E798100D0D974 /* AMGCommon */,
+				02C5F353218FE6C800D0D974 /* Bridge.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		02C5F32C218DF1E800D0D974 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F33E218E861900D0D974 /* Icons */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		02C5F32F218DF23700D0D974 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F31D218DF14000D0D974 /* Main.storyboard */,
+				02C5F317218DF13E00D0D974 /* AppDelegate.swift */,
+				02C5F319218DF13E00D0D974 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		02C5F330218DF25900D0D974 /* AMGUI */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F3872198D5BE00D0D974 /* AMGPreferenceWindow */,
+				02C5F3802193F89A00D0D974 /* AMGSafePurge */,
+				02C5F37D2193EF5400D0D974 /* AMGGUICommon */,
+			);
+			path = AMGUI;
+			sourceTree = "<group>";
+		};
+		02C5F335218E798100D0D974 /* AMGCommon */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F35C218FF31F00D0D974 /* AMGConfiguration.swift */,
+				02C5F358218FF31F00D0D974 /* AMGFeature.swift */,
+				02C5F35A218FF31F00D0D974 /* AMGRegistry.swift */,
+				02C5F35D218FF31F00D0D974 /* AMGString.swift */,
+				02C5F359218FF31F00D0D974 /* AMGSystem.swift */,
+				02C5F35B218FF31F00D0D974 /* AMGTracer.swift */,
+				02C5F357218FF31F00D0D974 /* AMGVersion.swift */,
+				02C5F379218FF38600D0D974 /* AMGFiles.swift */,
+			);
+			path = AMGCommon;
+			sourceTree = "<group>";
+		};
+		02C5F336218E798C00D0D974 /* AMGSafePurge */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F337218E79A300D0D974 /* AMGSafePurge.swift */,
+				02C5F339218E7CDD00D0D974 /* AMGPurgeItem.swift */,
+				02C5F37B2190011000D0D974 /* AMGSafePurgeHelpers.swift */,
+			);
+			path = AMGSafePurge;
+			sourceTree = "<group>";
+		};
+		02C5F33E218E861900D0D974 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F34A218E92A700D0D974 /* file_black.png */,
+				02C5F34B218E92A700D0D974 /* file_std.png */,
+				02C5F348218E92A700D0D974 /* file_white.png */,
+				02C5F347218E92A700D0D974 /* folder_black.png */,
+				02C5F34C218E92A700D0D974 /* folder_std.png */,
+				02C5F349218E92A700D0D974 /* folder_white.png */,
+				02C5F341218E87C300D0D974 /* safepurge.icns */,
+				02C5F33F218E861900D0D974 /* safepurge.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		02C5F354218FE78600D0D974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F355218FE78600D0D974 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02C5F365218FF33200D0D974 /* AMGData */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F366218FF33200D0D974 /* AMGDataSQLite.swift */,
+				02C5F367218FF33200D0D974 /* AMGDataTable.swift */,
+				02C5F368218FF33200D0D974 /* AMGData.swift */,
+				02C5F369218FF33200D0D974 /* AMGDataRow.swift */,
+				02C5F36A218FF33200D0D974 /* AMGDataColumn.swift */,
+			);
+			path = AMGData;
+			sourceTree = "<group>";
+		};
+		02C5F36B218FF33200D0D974 /* AMGEncode */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F36C218FF33200D0D974 /* AMGEncodeBinary.swift */,
+				02C5F36D218FF33200D0D974 /* AMGEncodeFullBinary.swift */,
+				02C5F36E218FF33200D0D974 /* AMGEncodeHash.swift */,
+				02C5F36F218FF33200D0D974 /* AMGEncode.swift */,
+			);
+			path = AMGEncode;
+			sourceTree = "<group>";
+		};
+		02C5F37D2193EF5400D0D974 /* AMGGUICommon */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F3852198D14500D0D974 /* AMGToolbarController.swift */,
+				02C5F33C218E846100D0D974 /* AMGBaseViewController.swift */,
+				02C5F37E2193EF6C00D0D974 /* AMGLabel.swift */,
+				02C5F3832193F9EC00D0D974 /* AMGFeedbackViewModel.swift */,
+				02C5F38C21990BCC00D0D974 /* AMGCommon.swift */,
+			);
+			path = AMGGUICommon;
+			sourceTree = "<group>";
+		};
+		02C5F3802193F89A00D0D974 /* AMGSafePurge */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F3812193F8C600D0D974 /* AMGSafePurgeViewModel.swift */,
+			);
+			path = AMGSafePurge;
+			sourceTree = "<group>";
+		};
+		02C5F3872198D5BE00D0D974 /* AMGPreferenceWindow */ = {
+			isa = PBXGroup;
+			children = (
+				02C5F3882198D61000D0D974 /* AMGPreferenceWindowModel.swift */,
+				02C5F38A2198D63B00D0D974 /* AMGPreferenceWindowViewModel.swift */,
+				02C5F38E21991B0E00D0D974 /* AMGSettingItem.swift */,
+			);
+			path = AMGPreferenceWindow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02C5F313218DF13E00D0D974 /* SafePurge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C5F324218DF14000D0D974 /* Build configuration list for PBXNativeTarget "SafePurge" */;
+			buildPhases = (
+				02C5F310218DF13E00D0D974 /* Sources */,
+				02C5F311218DF13E00D0D974 /* Frameworks */,
+				02C5F312218DF13E00D0D974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafePurge;
+			productName = SafePurge;
+			productReference = 02C5F314218DF13E00D0D974 /* SafePurge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02C5F30C218DF13E00D0D974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Abel Gancsos";
+				TargetAttributes = {
+					02C5F313218DF13E00D0D974 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 02C5F30F218DF13E00D0D974 /* Build configuration list for PBXProject "SafePurge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02C5F30B218DF13E00D0D974;
+			productRefGroup = 02C5F315218DF13E00D0D974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02C5F313218DF13E00D0D974 /* SafePurge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02C5F312218DF13E00D0D974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C5F31C218DF14000D0D974 /* Assets.xcassets in Resources */,
+				02C5F34E218E92A700D0D974 /* file_white.png in Resources */,
+				02C5F328218DF17000D0D974 /* README.md in Resources */,
+				02C5F351218E92A700D0D974 /* file_std.png in Resources */,
+				02C5F352218E92A700D0D974 /* folder_std.png in Resources */,
+				02C5F340218E861900D0D974 /* safepurge.png in Resources */,
+				02C5F34D218E92A700D0D974 /* folder_black.png in Resources */,
+				02C5F342218E87C300D0D974 /* safepurge.icns in Resources */,
+				02C5F350218E92A700D0D974 /* file_black.png in Resources */,
+				02C5F31F218DF14000D0D974 /* Main.storyboard in Resources */,
+				02C5F34F218E92A700D0D974 /* folder_white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02C5F310218DF13E00D0D974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C5F338218E79A300D0D974 /* AMGSafePurge.swift in Sources */,
+				02C5F3862198D14500D0D974 /* AMGToolbarController.swift in Sources */,
+				02C5F364218FF31F00D0D974 /* AMGString.swift in Sources */,
+				02C5F33D218E846100D0D974 /* AMGBaseViewController.swift in Sources */,
+				02C5F375218FF33200D0D974 /* AMGEncodeBinary.swift in Sources */,
+				02C5F38B2198D63B00D0D974 /* AMGPreferenceWindowViewModel.swift in Sources */,
+				02C5F361218FF31F00D0D974 /* AMGRegistry.swift in Sources */,
+				02C5F37F2193EF6C00D0D974 /* AMGLabel.swift in Sources */,
+				02C5F31A218DF13E00D0D974 /* ViewController.swift in Sources */,
+				02C5F370218FF33200D0D974 /* AMGDataSQLite.swift in Sources */,
+				02C5F318218DF13E00D0D974 /* AppDelegate.swift in Sources */,
+				02C5F37A218FF38600D0D974 /* AMGFiles.swift in Sources */,
+				02C5F3842193F9EC00D0D974 /* AMGFeedbackViewModel.swift in Sources */,
+				02C5F372218FF33200D0D974 /* AMGData.swift in Sources */,
+				02C5F35F218FF31F00D0D974 /* AMGFeature.swift in Sources */,
+				02C5F3892198D61000D0D974 /* AMGPreferenceWindowModel.swift in Sources */,
+				02C5F363218FF31F00D0D974 /* AMGConfiguration.swift in Sources */,
+				02C5F38F21991B0E00D0D974 /* AMGSettingItem.swift in Sources */,
+				02C5F378218FF33200D0D974 /* AMGEncode.swift in Sources */,
+				02C5F360218FF31F00D0D974 /* AMGSystem.swift in Sources */,
+				02C5F38D21990BCC00D0D974 /* AMGCommon.swift in Sources */,
+				02C5F37C2190011000D0D974 /* AMGSafePurgeHelpers.swift in Sources */,
+				02C5F374218FF33200D0D974 /* AMGDataColumn.swift in Sources */,
+				02C5F362218FF31F00D0D974 /* AMGTracer.swift in Sources */,
+				02C5F371218FF33200D0D974 /* AMGDataTable.swift in Sources */,
+				02C5F33A218E7CDD00D0D974 /* AMGPurgeItem.swift in Sources */,
+				02C5F373218FF33200D0D974 /* AMGDataRow.swift in Sources */,
+				02C5F35E218FF31F00D0D974 /* AMGVersion.swift in Sources */,
+				02C5F334218E78C800D0D974 /* SR.swift in Sources */,
+				02C5F3822193F8C600D0D974 /* AMGSafePurgeViewModel.swift in Sources */,
+				02C5F376218FF33200D0D974 /* AMGEncodeFullBinary.swift in Sources */,
+				02C5F377218FF33200D0D974 /* AMGEncodeHash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02C5F31D218DF14000D0D974 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02C5F31E218DF14000D0D974 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02C5F322218DF14000D0D974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02C5F323218DF14000D0D974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		02C5F325218DF14000D0D974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SafePurge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abelgancsos.SafePurge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SafePurge/Classes/Bridge.h;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		02C5F326218DF14000D0D974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SafePurge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abelgancsos.SafePurge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SafePurge/Classes/Bridge.h;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C5F30F218DF13E00D0D974 /* Build configuration list for PBXProject "SafePurge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C5F322218DF14000D0D974 /* Debug */,
+				02C5F323218DF14000D0D974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C5F324218DF14000D0D974 /* Build configuration list for PBXNativeTarget "SafePurge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C5F325218DF14000D0D974 /* Debug */,
+				02C5F326218DF14000D0D974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02C5F30C218DF13E00D0D974 /* Project object */;
+}
