@@ -86,9 +86,7 @@ class AMGFeedbackViewModel : NSWindow {
 		let urlPath : String = String(format:"%@?m=add&a=%@&t=%@",
 									  self.feedbackBaseEndpoint,
 									  SR.applicationName,
-									  AMGSystem.urlEncode(text: feedbackInputView.string));
-		NSLog(urlPath);
-		var response : String = "";
+									  AMGSystem.urlEncode(text: feedbackInputView.string));		var response : String = "";
 		do {
 			try response = NSString(contentsOf: URL(string: urlPath)!, encoding: String.Encoding.utf8.rawValue) as String;
 		}
