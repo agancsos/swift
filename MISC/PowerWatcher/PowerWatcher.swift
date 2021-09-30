@@ -27,9 +27,5 @@ class PowerWatcher {
 
 let group   : DispatchGroup = DispatchGroup();
 let watcher : PowerWatcher = PowerWatcher();
-
-for i : Int in 0..<CommandLine.arguments.count {
-
-}
 watcher.watch();
 RunLoop.current.run();
