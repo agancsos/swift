@@ -1,5 +1,4 @@
 import Foundation
-import CoreFoundation
 import EventKit
 
 public class Reminders {
