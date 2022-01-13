@@ -49,8 +49,9 @@ public class CompanyService {
             for match in matches {
                 let entry = String(rawHtml[Range(match.range, in: rawHtml)!]).replacingOccurrences(of: "\"", with: "");
 				if entry.contains("\(String(url.replacingOccurrences(of: " ", with: "-").split(separator: "=")[1]))-EI_") {
-					let uri2 = URL(string: "https://www.glassdoor.com/Overview/\(entry)")!;
-					var req2 = URLRequest(url: uri2);
+					let uri2 = URL(string: "https://www.glassdoor.com/Overview/\(entry)");
+					if uri2 == nil { return 9999.9999; }
+					var req2 = URLRequest(url: uri2!);
 					req2.addValue("PostmanRuntime/7.26.8", forHTTPHeaderField: "User-Agent");
 					let rawHtml2 = rawMessageRequest(request: req2, attempt: 0);
 					let regex2 = try NSRegularExpression(pattern: "ratingValue\" : \"[^\"]+", options: [.caseInsensitive]);

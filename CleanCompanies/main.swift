@@ -64,6 +64,7 @@ else {
 				}
 
 				if minRating > -1 {
+					sleep(5);
 					let companyRating = CompanyService.extractRating(url: "\(baseEndpoint)\(company.title!)");
 					if companyRating < minRating {
 						print("Company (\(company.title!)) has a low rating (\(companyRating))");
