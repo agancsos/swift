@@ -29,7 +29,7 @@ public class CompanyService {
             };
         };
         task.resume();
-        group.wait();
+	group.wait(timeout: DispatchTime.now() + DispatchTimeInterval.seconds(30));
         return result;
     }
 
