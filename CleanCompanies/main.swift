@@ -6,6 +6,7 @@ var isDebug        = false;
 var skipDuplicates = false;
 var skipNonUs      = false;
 var minRating      = -1.0;
+var delaySeconds   = 5;
 var baseEndpoint   = "https://www.glassdoor.com/Search/results.htm?keyword=";
 
 for i : Int in 0..<CommandLine.arguments.count {
@@ -15,6 +16,7 @@ for i : Int in 0..<CommandLine.arguments.count {
 	else if CommandLine.arguments[i] == "--skip" { skipDuplicates = true; }
 	else if CommandLine.arguments[i] == "--skip-us-check" { skipNonUs = true; }
 	else if CommandLine.arguments[i] == "--rating" { minRating = Double(CommandLine.arguments[i + 1]) ?? -1.0; }
+	else if CommandLine.arguments[i] == "--delay" { delaySeconds = Int(CommandLine.arguments[i + 1]) ?? 5; }
 }
 let service = ReminderService();
 if (listName == "") {
@@ -64,7 +66,7 @@ else {
 				}
 
 				if minRating > -1 {
-					sleep(5);
+					sleep(UInt32(delaySeconds));
 					let companyRating = CompanyService.extractRating(url: "\(baseEndpoint)\(company.title!)");
 					if companyRating < minRating {
 						print("Company (\(company.title!)) has a low rating (\(companyRating))");
