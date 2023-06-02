@@ -25,6 +25,7 @@ SafePurge is a macOS only application meant to safely purge old data that is oth
 ###  Flags
 ### Registry
 | Name                                                       | Description                                                                           | Possible Values                                | Default                                          
+|--|--|--|--|
 | TraceLevel                                               | Level of the tracing                                                               | 0,1,2,3,4,5                                        | 1                                        
 | MininumFileSize                                      | Minimum file size for files to be removed                             |                                                          | 5M                                     
 | IncludedBasePaths                                 | Base directories to include                                                   |                                                          |                                           
